@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(255, 169, 0);
+}
+
+section {
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: rgb(255, 169, 0);
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  /* align-items: center; */
+  padding: 5rem 0rem;
+}
+
+.container {
+  padding: 3rem 3rem;
+  color: white;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid whitesmoke;
+  border-radius: 0.4rem;
+  /* border: 2px solid white; */
+}
+.buttons {
+  background-color: transparent;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  border: 2px solid whitesmoke;
+  border-radius: 0.4rem;
+  padding: 0.8rem 4rem;
+  background-color: transparent;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+p {
+  font-size: 1.5rem;
+}
+#stop {
+  display: none;
+}
+#lap {
+  display: none;
+}
+#lapContainer {
+  font-size: 1.5rem;
+  color: black;
+}
+
+@media screen and (min-width: 2100px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .container {
+    margin-top: 5%;
+  }
+  .btn {
+    padding: 2rem 6rem;
+    font-size: 2rem;
+  }
+  #lapContainer {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding: 1rem;
+    gap: 1.5rem;
+    width: 98%;
+  }
+  .btn {
+    padding: 0.7rem 1rem;
+  }
+}
